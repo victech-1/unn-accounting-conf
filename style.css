@@ -10,7 +10,7 @@
 }
 
 :root {
-    --color-primary: #0a5a32;
+    --color-primary: #147b47;
     --color-danger: #fd4f5e;
     --color-success: #1c7007;
     --color-warning: #ffbb55;
@@ -29,6 +29,10 @@
     --card-padding: 1.6rem;
     --padding-1: 1.2rem;
     --box-shadow: 0 2rem 8rem  var(--color-light);   
+}
+
+a:hover{
+    cursor: pointer;
 }
 
 header {
@@ -67,9 +71,10 @@ header {
 }
 
 .nav_links{
-    margin-left: 200px;
+    margin-left: 150px;
     height: 100%;
     display: flex;
+    gap: 0;
     align-items: center;
     justify-content: center;
 }
@@ -78,6 +83,7 @@ header {
     font-size: 12px;
     font-family: sans-serif, Oswald;
     padding: 10px;
+    margin: 0;
 }
 
 .nav_links li a:hover{
@@ -90,7 +96,36 @@ header {
 
 .nav_links li a{
     color: white;
-    font-weight: 400;
-    /* letter-spacing: 0.6px; */
+    display: flex;
 }
 
+.nav_links li a span{
+    font-size: 15px;
+}
+
+
+.dropdown-menu {
+    position: absolute;
+    height: auto;
+    width: auto;
+    color: white;
+    background-color: #0a5a32;
+    border: black;
+    padding: 5px 10px;
+    box-shadow: var(--box-shadow);
+    padding-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.dropdown-menu li{
+    padding: 6px 15px;
+    font-size: 12px;
+    color: #dbdbdb;
+    transition: all 300ms ease;
+    
+}
+
+.dropdown-menu li:hover{
+    padding-left: 16px;
+    background-color: #7cb89a;
+}
