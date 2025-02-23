@@ -35,13 +35,17 @@ a:hover{
     cursor: pointer;
 }
 section{
-    height: 100vh;
+    /* height: 100vh; */
     overflow-x: hidden;
 }
 
 header {
-    height: 10%;
+    height: 10vh;
     width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
     background-color: var(--color-primary);
     display: flex;
     justify-content: center; /* Centers horizontally */
@@ -53,24 +57,23 @@ header {
     width: 85%;
     display: flex;
     gap: 10rem;
-    border:1px solid white;
+    /* border:1px solid white; */
     
 }
 
 .logo {
     background-image: url(./images/logo.png);
+    background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     height: 55px;
     width: 180px;
-    margin-top: 5px;
+    align-self: center;
 }
 
 .navbar_tabs {
     height: 60px;
     width: 840px;
-    margin-top: 5px;
-    border: 1px solid red;
     justify-self: flex-end;
 
 }
@@ -93,6 +96,7 @@ header {
 
 .nav_links li a:hover{
     color: #efa506;
+    transition: all 0.1s ease-in;
 }
 
 #active{
@@ -115,7 +119,7 @@ header {
     width: auto;
     color: white;
     background-color: #0a5a32;
-    border: black;
+    /* border: black; */
     padding: 5px 10px;
     box-shadow: 10px rgb(142, 139, 139);
     padding-bottom: 15px;
@@ -156,19 +160,18 @@ header {
 .page_uno {
     background-image: url(./images/banner.jpg);
     background-size: contain;
+    background-position-y: center;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 900px;
-    border: 2px solid darkblue;
+    height: 100vh;
+    padding-top: 220px;
 }
 
 .c1 {
-    border: 1px dotted black;
     padding: 28px;
     width: 556px;
     height: 224px;
     margin-left: 70px;
-    margin-top: 228px;
     
 }
 .c1 h1 {
@@ -176,12 +179,59 @@ header {
     font-family: "Poppins", serif;
     color: white;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    display: flex;
+    /* flex-direction: column;
+    column-gap: 10px; */
 }
 
 .datetime {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 15px;
     text-shadow: 1px 1px rgb(0, 0, 0), 0 0 0.01em rgb(0, 0, 0);
-    text-align: left;
-    letter-spacing: 0px;
-    font-weight: 400;
-    text-shadow: 1px 1px rgb(0, 0, 0), 0 0 0.01em rgb(0, 0, 0);
+}
+
+
+
+.c1 .buttons{
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.c1 .buttons button{
+    height: 3rem;
+    width: 250px;
+    padding: 15px 20px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    border-radius: 3px;
+}
+
+.c1 .buttons button:hover{
+    opacity: 0.9;
+    scale: 0.9;
+    transition: all 0.2s ease-in;
+}
+
+.registration {
+    background-color: #6d6f71;
+}
+
+.submission {
+    background-color: #096c3a;
+}
+
+.c2 {
+    height: 200px;
+    width: 100vw;
+}
+
+.countdown{
+    height: 100%;
+    width: 60%;
+    border-right: 5px solid #3233332d;
+    background-color: #096c3a;
 }
