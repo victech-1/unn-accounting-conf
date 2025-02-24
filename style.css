@@ -9,6 +9,8 @@
     box-sizing: border-box;
 }
 
+body{
+}
 :root {
     --color-primary: #147b47;
     --color-danger: #fd4f5e;
@@ -37,6 +39,7 @@ a:hover{
 section{
     /* height: 100vh; */
     overflow-x: hidden;
+    font-family: "Oswald", sans-serif;
 }
 
 header {
@@ -49,15 +52,23 @@ header {
     background-color: var(--color-primary);
     display: flex;
     justify-content: center; /* Centers horizontally */
+    transition: box-shadow 0.3s ease-in-out;
+    
+}
+
+.nav-shadow {
+    /* box-shadow: 0px 10px 6px black; */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 
 .navbar {
+    justify-content: space-around;
     height: 100%;
     width: 85%;
+    flex-grow: 1;
     display: flex;
     gap: 10rem;
-    /* border:1px solid white; */
     
 }
 
@@ -73,13 +84,13 @@ header {
 
 .navbar_tabs {
     height: 60px;
-    width: 840px;
+    min-width: 840px;
     justify-self: flex-end;
-
+    
 }
 
 .nav_links{
-    margin-left: 150px;
+    /* margin-left: 150px; */
     height: 100%;
     display: flex;
     gap: 0;
@@ -160,7 +171,7 @@ header {
 .page_uno {
     background-image: url(./images/banner.jpg);
     background-size: contain;
-    background-position-y: center;
+    background-position-y: 50px;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
@@ -227,11 +238,194 @@ header {
 .c2 {
     height: 200px;
     width: 100vw;
+    display: flex;
 }
 
 .countdown{
     height: 100%;
     width: 60%;
-    border-right: 5px solid #3233332d;
+    border-right: 3px solid #8a8d8d;
     background-color: #096c3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown div{
+    height: 75px;
+    width: 120px;
+    border-style: groove;
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: "Poppins", sans-serif;
+    /* padding: 10px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.countdown div span{
+    color: white;
+    opacity: 0.7;
+    font-size: 15px;
+    font-family: "Oswald", sans-serif;
+}
+
+.days{
+    color: #ec398b;
+}
+
+.hours{
+    color: #fac400
+}
+.secs{
+    color: white;
+}
+
+.hours p::before,
+.mins p::before,
+.secs p::before {
+    content: ":";
+    color: rgba(255, 255, 255, 0.267);
+    padding-right: 6px;
+}
+
+
+.mins{
+    color: rgba(255, 255, 255, 0.476);
+}
+
+.reg_now{
+    background-color: #096c3a;
+    height: 100%;
+    width: 40%;
+    border-left: 3px solid #8a8d8d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reg_now button{
+    height: 56px;
+    width: 181px;
+}
+
+.pnk-btn {
+    background: #ec398b;
+    font-family: "Oswald", sans-serif;
+    border: none;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 500;
+
+}
+
+.pnk-btn a{
+    color: white;
+}
+
+.pnk-btn:hover{
+    background-color: #ec398aa9;
+    scale: 95%;
+    transition: all 0.2s ease-in;
+}
+
+.page_duo{
+    width: 100vw;
+    height: auto; /* Change later*/
+    background-color: #f1f1f1;
+}
+
+.speakers{
+    padding: 100px 90px;
+    height: auto;
+    min-height: 200px;
+    width: auto;
+}
+
+.speakers h2{
+    color: #096c3a;
+    font-weight: 900;
+    font-size: 36px;
+    margin-top: 20px;
+}
+.spkr-container{
+    height: 35px;
+}
+
+.speakers button{
+    background-color: #064c29;
+    height: 50px;
+    width: 240px;
+    color: white;
+    padding: 15px 40px;
+    margin: 2px;
+    font-size: 12px;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-top: 60px;
+    border: none;
+    border-radius: 5px;
+}
+
+.speakers button:hover{
+    transition: all 0.2s ease-in;
+    opacity: 0.8;
+}
+
+.why-attend {
+    display: flex;
+    flex-direction: column;
+    padding-top: 60px;
+    background-color: #096c3a;
+    width: 100vw;
+    height: 600px;
+    padding-left: 100px;
+}
+
+.why-attend h2{
+    color: white;
+    font-size: 45px;
+    font-family: "Poppins", sans-serif;
+    /* margin-left: 100px; */
+    
+}
+
+.divider{
+    height: 6px;
+    margin-top: 5px;
+    /* margin-left: 100px; */
+    width: 10%;
+    background-color:#ec398b ;
+    
+}
+
+.why-attend h3{
+    font-size: 30px;
+    margin: 30px 0px;
+    color: white;
+}
+
+.why-attend p{
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+}
+
+.why-attend p>span{
+    font-style: 12px;
+    font-family: "Poppins", sans-serif;
+}
+
+.why-attend button{
+    margin-top: 30px;
+    height: 56px;
+    width: 158px;
+    border: none;   
+}
+
+.event-details{
+
 }
