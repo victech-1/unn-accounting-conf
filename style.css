@@ -170,11 +170,14 @@ header {
 
 .page_uno {
     background-image: url(./images/banner.jpg);
-    background-size: contain;
+    background-size: cover;
     background-position-y: 50px;
+    background-position-x: center;
+
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
+    max-height: 900px;
     padding-top: 220px;
 }
 
@@ -307,11 +310,11 @@ header {
 }
 
 .reg_now button{
-    height: 56px;
     width: 181px;
 }
 
 .pnk-btn {
+    padding: 15px 30px;
     background: #ec398b;
     font-family: "Oswald", sans-serif;
     border: none;
@@ -376,7 +379,7 @@ header {
     opacity: 0.8;
 }
 
-.why-attend {
+.why-ACCIC {
     display: flex;
     flex-direction: column;
     padding-top: 60px;
@@ -386,7 +389,7 @@ header {
     padding-left: 100px;
 }
 
-.why-attend h2{
+.why-ACCIC h2{
     color: white;
     font-size: 45px;
     font-family: "Poppins", sans-serif;
@@ -403,23 +406,23 @@ header {
     
 }
 
-.why-attend h3{
+.why-ACCIC h3{
     font-size: 30px;
     margin: 30px 0px;
     color: white;
 }
 
-.why-attend p{
+.why-ACCIC p{
     font-size: 30px;
     font-family: "Poppins", sans-serif;
 }
 
-.why-attend p>span{
+.why-ACCIC p>span{
     font-style: 12px;
     font-family: "Poppins", sans-serif;
 }
 
-.why-attend button{
+.why-ACCIC button{
     margin-top: 30px;
     height: 56px;
     width: 158px;
@@ -427,5 +430,329 @@ header {
 }
 
 .event-details{
+    border: 1px solid black;
+    padding:20px 90px ;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
+.event-details .time-info p{
+    color: #323333de;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    padding: 0px 15px;
+}
+
+.time-info{
+    width: 60%;
+    height: 95%;
+    /* border: 1px solid gray; */
+}
+
+.timetable{
+    width: 100%;
+    margin-top: 36px;
+    /* border: 1px solid red; */
+    border-spacing: 1px;
+    font-family: "Poppins", sans-serif;
+    
+}
+.timetable td, th{
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+}
+
+.timetable th{
+    border: none;
+    color: #fff;
+}
+    
+.timetable td{
+    background-color: #e9e9ee;
+    color: #3e4040;
+}
+
+.timetable td:hover{
+    background-color: #d3d3d7;
+}
+
+.timetable td a{
+    color: #147b47;
+}
+
+.location-info{
+    width: 30%;
+    height: 390px;
+    background-color: white;
+    border-radius: var(--border-radius-2);
+    box-shadow: 0px 5px 10px rgb(69, 69, 69);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #323333;
+    margin: 5px 20px 20px;
+    min-width: 250px;
+}
+.location-info a{
+    color: #064c29;
+    font-size:15px;
+    font-weight: normal;
+}
+
+.location-info img{
+    height: 60px;
+    width: 60px;
+}
+
+.who-attends{
+    width: 100%;
+    height: auto;
+    border: 1px solid saddlebrown;
+    padding: 55px 100px;
+    display: flex;
+}
+
+.cpnf-img{
+    height: 390px;
+    width: 50%;
+    padding: 0px 15px;
+}
+
+.cpnf-img img{
+    width: 95%;
+}
+
+.info{
+    width: 50%;
+    font-family: "Poppins", sans-serif;
+    color: #323333b3;
+}
+
+.info p{
+    margin-bottom: 12px;
+}
+
+.info strong{
+    color: #323333db;
+    font-size: 25px;
+}
+
+.info div{
+    margin-top: 28px;
+}
+
+.grn-btn{
+    background-color: #064c29;
+    height: 50px;
+    width: 240px;
+    color: white;
+    padding: 15px 40px;
+    margin: 2px;
+    font-size: 14px;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 2px;
+    font-weight: 300;
+    border: none;
+}
+
+.grn-btn:hover{
+    background-color: #064c2985;
+    scale: 95%;
+    transition: all 0.2s ease-in;
+}
+
+.info div button:first-child a{
+    color: white;
+}
+
+.why-attend{
+    width: 100%;
+    height: auto;
+    border: 1px solid violet;
+    padding: 55px 100px;
+    display: flex;   
+    flex-direction: column;
+}
+
+.why-attend h4{ 
+    font-size: 30px;
+    font-weight: 700;
+    color: #096C3A;
+
+}
+
+.why-attend p{
+    color: #323333;
+    font-family: "Poppins" ,sans-serif;
+    text-align: justify;
+}
+
+.reasons{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    margin-top: 20px;
+
+}
+
+.box{
+    height: 250px;
+    width: 25%;
+    border: 1px solid red ;
+    text-align: center;
+    padding: 35px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+.box div span{
+    font-size: 30px;
+    font-weight: 300;
+    color: #2A2A2A;
+}
+
+.box>p {
+    font-weight: 700;
+    text-align: center;
+    color: #323333b5;
+}
+
+.reasons .box:nth-child(1){
+    background-color: #eaeaea;
+}
+.reasons .box:nth-child(2){
+    background-color: #e2e2e2;
+}
+.reasons .box:nth-child(3){
+    background-color: #dbdbdb;
+}
+.reasons .box:nth-child(4){
+    background-color: #c6c6c6;
+}
+
+.reg-fees{
+    width: 100%;
+    height: auto;
+    border: 1px solid violet;
+    padding: 15px 100px;
+    display: flex;   
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 120px;
+}
+
+.fees{
+    background-color: white;
+    padding: 30px 15px;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.reg-fees p{
+    color: #323333e1;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+
+.fee-deadline{
+    text-align: center;
+}
+
+
+.fee-deadline h2{
+    color: #096C3A;
+    font-weight: 900;
+    font-size: 42px;
+    font-family: "Poppins", sans-serif;
+}
+
+.fee-deadline h3{
+    color: #EC398B;
+    font-weight: 400;
+    font-size: 20px;
+    /* font-family: "Poppins", sans-serif; */
+}
+
+.fee-deadline p{
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: #323333;
+    font-weight: 400;
+    margin: 16px;
+    line-height: 26px;
+}
+
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 1024px) {
+    .navbar_tabs {
+        min-width: auto;
+    }
+
+    .c1 h1 {
+        font-size: 2rem;
+    }
+
+    .why-ACCIC {
+        height: auto;
+        padding: 30px;
+    }
+
+    .who-attends {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .who-attends .info, .who-attends .cpnf-img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav_links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .page_uno {
+        height: auto;
+        padding-top: 100px;
+    }
+
+    .c1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .c1 h1 {
+        font-size: 1.8rem;
+    }
+
+    .buttons button {
+        width: 100%;
+    }
 }
