@@ -10,6 +10,10 @@
 }
 
 body{
+    font-size: 18px ;
+}
+.menu-bar, .close{
+    display: none;
 }
 :root {
     --color-primary: #147b47;
@@ -51,24 +55,35 @@ header {
     z-index: 100;
     background-color: var(--color-primary);
     display: flex;
-    justify-content: center; /* Centers horizontally */
+    justify-content: center; 
     transition: box-shadow 0.3s ease-in-out;
+    padding: 1px 10px;
     
 }
 
 .nav-shadow {
-    /* box-shadow: 0px 10px 6px black; */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.463);
+    animation: menu 0.4s ease-in;
 }
 
+@keyframes menu{
+    0%{
+        top: -10vh;
+    }
+
+    100%{
+        top: 0;
+    }
+}
 
 .navbar {
+    display: flex;
     justify-content: space-around;
     height: 100%;
-    width: 85%;
+    width: 90%;
     flex-grow: 1;
-    display: flex;
-    gap: 10rem;
+    border: 1px solid yellow;
+    gap: 1.2rem;
     
 }
 
@@ -77,14 +92,34 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height: 55px;
+    height: 100%;
     width: 180px;
+    min-width: 134px;
     align-self: center;
+    border: 1px solid black;
+}
+
+/* MENU BUTTON (Mobile) */
+.menu-btn {
+    display: none;
+    cursor: pointer;
+    justify-self: flex-end;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+}
+
+.menu-bar, .close {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
 }
 
 .navbar_tabs {
-    height: 60px;
-    min-width: 840px;
+    /* width: 60%; */
     justify-self: flex-end;
     
 }
@@ -99,8 +134,8 @@ header {
 }
 
 .nav_links li{
-    font-size: 12px;
-    font-family: sans-serif, Oswald;
+    font-size: 0.75rem;
+    font-family: "Oswald" ,sans-serif;
     padding: 10px;
     margin: 0;
 }
@@ -120,7 +155,7 @@ header {
 }
 
 .nav_links li a span{
-    font-size: 15px;
+    font-size: 0.93rem;
 }
 
 
@@ -130,7 +165,6 @@ header {
     width: auto;
     color: white;
     background-color: #0a5a32;
-    /* border: black; */
     padding: 5px 10px;
     box-shadow: 10px rgb(142, 139, 139);
     padding-bottom: 15px;
@@ -154,7 +188,7 @@ header {
 .dropdown-menu li{
     margin: 5px 0;
     padding: 6px 15px;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #cdcdcd;
     
 }
@@ -173,12 +207,13 @@ header {
     background-size: cover;
     background-position-y: 50px;
     background-position-x: center;
-
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
     max-height: 900px;
-    padding-top: 220px;
+    display: flex;
+    align-items: center;
+    /* padding-top: 220px; */
 }
 
 .c1 {
@@ -186,21 +221,20 @@ header {
     width: 556px;
     height: 224px;
     margin-left: 70px;
+    border: 1px solid violet;
     
 }
 .c1 h1 {
-    font-size: 43px;
+    font-size: 2.68rem;
     font-family: "Poppins", serif;
     color: white;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     display: flex;
-    /* flex-direction: column;
-    column-gap: 10px; */
 }
 
 .datetime {
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     margin-top: 15px;
     text-shadow: 1px 1px rgb(0, 0, 0), 0 0 0.01em rgb(0, 0, 0);
@@ -211,16 +245,16 @@ header {
 .c1 .buttons{
     display: flex;
     gap: 10px;
-    margin-top: 40px;
+    margin-top: 40px;   
 }
 
 .c1 .buttons button{
-    height: 3rem;
-    width: 250px;
+    max-height: 3rem;
+    max-width: 250px;
     padding: 15px 20px;
     color: white;
     font-family: sans-serif;
-    font-size: 18px;
+    font-size: 1.125rem;
     border-radius: 3px;
 }
 
@@ -260,7 +294,7 @@ header {
     border-style: groove;
     display: flex;
     flex-direction: column;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 900;
     font-family: "Poppins", sans-serif;
     /* padding: 10px; */
@@ -271,7 +305,7 @@ header {
 .countdown div span{
     color: white;
     opacity: 0.7;
-    font-size: 15px;
+    font-size: 0.93rem;
     font-family: "Oswald", sans-serif;
 }
 
@@ -319,7 +353,7 @@ header {
     font-family: "Oswald", sans-serif;
     border: none;
     color: white;
-    font-size: 14px;
+    font-size: 0.875rem;
     letter-spacing: 2px;
     font-weight: 500;
 
@@ -343,7 +377,7 @@ header {
 
 .speakers{
     padding: 100px 90px;
-    height: auto;
+    height: auto;   
     min-height: 200px;
     width: auto;
 }
@@ -351,7 +385,7 @@ header {
 .speakers h2{
     color: #096c3a;
     font-weight: 900;
-    font-size: 36px;
+    font-size: 2.25rem;
     margin-top: 20px;
 }
 .spkr-container{
@@ -365,7 +399,7 @@ header {
     color: white;
     padding: 15px 40px;
     margin: 2px;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-family: "Oswald", sans-serif;
     letter-spacing: 2px;
     font-weight: 500;
@@ -391,7 +425,7 @@ header {
 
 .why-ACCIC h2{
     color: white;
-    font-size: 45px;
+    font-size: 2.81825rem;
     font-family: "Poppins", sans-serif;
     /* margin-left: 100px; */
     
@@ -407,13 +441,13 @@ header {
 }
 
 .why-ACCIC h3{
-    font-size: 30px;
+    font-size: 1.875rem;
     margin: 30px 0px;
     color: white;
 }
 
 .why-ACCIC p{
-    font-size: 30px;
+    font-size: 1.875rem;
     font-family: "Poppins", sans-serif;
 }
 
@@ -522,7 +556,7 @@ header {
 }
 
 .cpnf-img{
-    height: 390px;
+    max-height: 390px;
     width: 50%;
     padding: 0px 15px;
 }
@@ -548,6 +582,7 @@ header {
 
 .info div{
     margin-top: 28px;
+
 }
 
 .grn-btn{
@@ -557,7 +592,7 @@ header {
     color: white;
     padding: 15px 40px;
     margin: 2px;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-family: "Oswald", sans-serif;
     letter-spacing: 2px;
     font-weight: 300;
@@ -584,7 +619,7 @@ header {
 }
 
 .why-attend h4{ 
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 700;
     color: #096C3A;
 
@@ -617,7 +652,7 @@ header {
 }
 
 .box div span{
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 300;
     color: #2A2A2A;
 }
@@ -661,7 +696,7 @@ header {
 
 .reg-fees p{
     color: #323333e1;
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: 700;
     font-family: "Poppins", sans-serif;
 }
@@ -674,14 +709,14 @@ header {
 .fee-deadline h2{
     color: #096C3A;
     font-weight: 900;
-    font-size: 42px;
+    font-size: 2.625rem;
     font-family: "Poppins", sans-serif;
 }
 
 .fee-deadline h3{
     color: #EC398B;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
     /* font-family: "Poppins", sans-serif; */
 }
 
@@ -697,10 +732,10 @@ header {
 
 /* Media Queries for Smaller Screens */
 @media (max-width: 1024px) {
-    .navbar_tabs {
-        min-width: auto;
+    
+    .event-details div {
+        width: 100%;
     }
-
     .c1 h1 {
         font-size: 2rem;
     }
@@ -708,46 +743,198 @@ header {
     .why-ACCIC {
         height: auto;
         padding: 30px;
+        font-size: calc(100% / 4);
+        text-align: left;
     }
+
+
+    .who-attends{
+        gap: 20px;
+    }
+
+
 
     .who-attends {
         flex-direction: column;
         align-items: center;
+        gap: 30px;
     }
 
     .who-attends .info, .who-attends .cpnf-img {
         width: 100%;
     }
-}
+} 
 
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        gap: 10px;
+    body{
+        font-size: 15px;
     }
-
-    .nav_links {
-        flex-direction: column;
-        text-align: center;
-    }
-
+    
     .page_uno {
-        height: auto;
+        height: 80vh;
         padding-top: 100px;
     }
 
     .c1 {
         width: 100%;
+        margin-left: 10px;
+    }
+
+    .c1 button{
+        width: auto;
+    }
+
+    .c1 div{
+        flex-direction: column;
+    }
+
+    .c1,.datetime{
         text-align: center;
     }
 
-    .buttons {
+    
+
+    .speakers{
+        padding: 30px;
+
+    }
+
+    .c2{
         flex-direction: column;
+    }
+    .c2 div{
+        width: 100%;
+        border: none;
+    }
+    
+    .buttons {
+        /* flex-direction: column; */
         align-items: center;
+    }
+
+    .event-details{
+        padding: 15px 30px;
+    }
+
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 1000px) {
+
+    
+    .nav_links li {
+        font-size: 10px;
     }
 }
 
+
+@media (max-width: 774px) {
+    .navbar {
+        width: 100%;
+        padding: 0 15px;
+        justify-content: space-between;
+    }
+
+    .nav_links {
+        border-top: 1px solid white;
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        width: 80%;
+        height: 85vh;
+        justify-content: start;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: var(--color-primary);
+        padding: 20px 10px;
+        display: none; /* Initially hidden */
+        box-shadow: 2px 3px 5px rgba(36, 36, 36, 0.848);
+    }
+
+    .nav_links li {
+        padding: 10px 0;
+    }
+
+    .menu-btn {
+        display: block;
+        position: absolute;
+        right: 10vw;
+        top: 3vh;
+    }
+
+    /* .menu-bar:hover .nav_links{
+        display: flex;
+    } */
+
+    .menu-bar {
+        display: block;
+    }
+
+    .nav_links.active {
+        display: flex;
+        animation: menuSlide 0.2s ease-in-out;
+        /* height: 70%; */
+    }
+    @keyframes menuSlide{
+        0%{
+            top: -100%;
+        }
+
+        100%{
+            top: 0;
+        }
+    }
+
+    .nav_links li:hover .dropdown-menu{
+        visibility: hidden;
+    }
+
+    .c1 h1,div{
+        text-align: center;
+    }
+
+    .info{
+        width: 100%;
+    }
+
+    .cpnf-img{
+        width: 100%;
+        padding: 0;
+    }
+
+    .who-attends,.why-attend{
+        padding: 30px;
+    }
+
+    .who-attends .info>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reg-fees{
+        padding: 10px;
+    }
+
+    .fees{
+        padding: 25px 10px;
+    }
+
+    .box{
+        width: 50%;
+    }
+    .close {
+        display: block;
+    }
+}
+
+
 @media (max-width: 480px) {
+    body{
+        font-size: 9px;
+    }
+
     .c1 h1 {
         font-size: 1.8rem;
     }
@@ -755,4 +942,6 @@ header {
     .buttons button {
         width: 100%;
     }
-}
+} 
+
+/* @media (max-width: 5) */

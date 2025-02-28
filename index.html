@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&family=Oswald:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
-
+    <!-- <script src="index.js" defer></script> -->
 </head>
 <body>
     <section>
@@ -24,6 +24,8 @@
             <nav class="navbar">
                 <div class="logo"></div>
 
+                <button class="menu-btn menu-bar"><i class="fa-solid fa-bars"></i></button>
+                <button class="menu-btn close" style="display: none;"><i class="fa-solid fa-xmark"></i></button>
 
                 <div class="navbar_tabs">
                     <ul class="nav_links">
@@ -44,7 +46,7 @@
                         </li>
 
                         <li>
-                            <a href="#">SUBMISSION INFO<span class="material-symbols-outlined">arrow_drop_down</span></a>
+                            <a href="#" id="container">SUBMISSION INFO<span id="toggleElement" class="material-symbols-outlined">arrow_drop_down</span></a>
                             <ul class="dropdown-menu">
                                 <li><a>SUBMISSION</a></li>
                                 <li><a>ONLINE SUBMISSION FORM</a></li>
@@ -250,7 +252,7 @@
     </section>
 
     <!-- SCRIPTS -->
-    <script src="script.js"></script>
+    <script src="index.js" defer></script>
     <!-- SCRIPTS END -->
 </body>
 </html> 
