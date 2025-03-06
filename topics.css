@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    /* background-color: var(--color-primary); */
+}
+
+.text{
+    justify-content: center;
+}
+
+.sub{
+    background-color: RGB(9, 108, 58);
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    display: flex;
+    margin-left: 60px;
+    margin-top: 90px;
+    align-content: center;
+    /* margin: 0, 0, 0, 60px; */
+    text-align: center;
+    /* align-self:auto; */
+    padding: 20px; 
+}
+
+.sub h3{
+    color: white;
+    font-family: "poppins" sans-serif;
+    font-size: 16px;
+    vertical-align: middle;
+    font-weight: 400;
+    /* padding: 16px, 25px; */
+}
+
+.button{
+    /* justify-content: center; */
+    margin-top: 90px;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 130px;
+    /* justify-items: center; */
+}
+.button .one{
+    color: RGB(255, 255, 255);
+    background-color: RGB(20, 108, 58);
+    font-family: "oswald" sans-serif;
+    font-size: 14px;
+    justify-content: center;
+    line-height: 26px;
+    /* align-items: center; */
+    width: 20vw;
+    display: flex;
+    margin-right: 5px;
+    box-shadow: rgba(50, 51, 51, 0.4) 0px 8px 6px -6px;
+    /* margin-top: 90px; */
+    /* align-content: center; */
+    /* margin: 0, 0, 0, 60px; */
+    /* text-align: center; */
+    /* align-self:auto; */
+    padding: 19px;
+    /* background: linear-gradient( 45deg, rgb(56, 65, 247) 10%, blue 70%); */
+    
+}
+
+.button .one:hover{
+    border-radius: 16px;
+    color: blue;
+    cursor: pointer;
+    /* background: linear-gradient( 45deg, blue 70%, rgb(56, 65, 247) 20%); */
+}
+
+.button .two:hover{
+    border-radius: 16px;
+    color: blue;
+    cursor: pointer;
+    /* fill: #ec398b; */
+}
+
+.button .two{
+    color: RGB(255, 255, 255);
+    background-color: RGB(236, 57, 139);
+    justify-content: center;
+    font-family: "oswald" sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    /* letter-spacing: 2px; */
+    /* align-items: center; */
+    width: 20vw;
+    display: flex;
+    margin-left: 5px;
+    box-shadow: rgba(50, 51, 51, 0.4) 0px 8px 6px -6px;
+    /* margin-top: 90px; */
+    /* align-content: center; */
+    /* margin: 0, 0, 0, 60px; */
+    /* text-align: center; */
+    /* align-self:auto; */
+    padding: 19px;   
+}
+
+/* .fotter{
+    margin-top: 10px;
+} */

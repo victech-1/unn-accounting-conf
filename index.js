@@ -49,32 +49,39 @@ function replaceSpan() {
 
     if (window.innerWidth < 600) { // Adjust this width as needed
         if (span) {
-            // Create a new checkbox
-            let checkbox = document.createElement("input");
-            checkbox.type = "radio"; // Change to "checkbox" if needed
-            checkbox.id = "toggleElement";
-
-            // Replace the span with the checkbox
-            container.replaceChild(checkbox, span);
+            // Create a new button
+            let button = document.createElement("button");
+            button.id = "toggleElement";
+            button.chil
+            // Replace the span with the button
+            container.replaceChild(button, span);
         }
     } else {
-        let checkbox = document.getElementById("toggleElement");
-        if (checkbox && checkbox.tagName === "INPUT") {
+        let button = document.getElementById("toggleElement");
+        if (button && button.tagName === "INPUT") {
             let span = document.createElement("span");
             span.id = "toggleElement";
             span.textContent = "Text";
 
-            // Replace the checkbox back with the span
-            container.replaceChild(span, checkbox);
+            // Replace the button back with the span
+            container.replaceChild(span, button);
         }
     }
 }
 
+function loadComponent(id, file) {
+    fetch(file)
+        .then(response => response.text())
+        .then(data => document.getElementById(id).innerHTML = data);
+}
+
 // Run on window resize
-window.addEventListener("resize", replaceSpan);
+// window.addEventListener("resize", replaceSpan);
 
 // Run on page load
-window.addEventListener("load", replaceSpan);
+// window.addEventListener("load", replaceSpan);
+loadComponent("header", "header.html");
+loadComponent("footer", "footer.html");
 
 // Run on page load
 checkScreenSize();

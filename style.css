@@ -140,7 +140,7 @@ header {
     margin: 0;
 }
 
-.nav_links li a:hover{
+.nav_links li a span:hover{
     color: #efa506;
     transition: all 0.1s ease-in;
 }
@@ -154,8 +154,12 @@ header {
     display: flex;
 }
 
-.nav_links li a span{
+.nav_links li a span, input{
     font-size: 0.93rem;
+}
+
+.menu-label{
+    display: none;
 }
 
 
@@ -729,6 +733,31 @@ header {
     line-height: 26px;
 }
 
+/* Footer */
+footer {
+    height: 15%;
+    width: 100vw;
+    background-color: var(--color-primary);
+}
+
+.footer{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 37px;
+    line-height: 21px;
+}
+
+.footer h3{
+    align-content: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: #ffff;
+}
+
 
 /* Media Queries for Smaller Screens */
 @media (max-width: 1024px) {
@@ -873,7 +902,7 @@ header {
 
     .nav_links.active {
         display: flex;
-        animation: menuSlide 0.2s ease-in-out;
+        animation: menuSlide 0.2s ease-in;
         /* height: 70%; */
     }
     @keyframes menuSlide{
@@ -886,8 +915,39 @@ header {
         }
     }
 
-    .nav_links li:hover .dropdown-menu{
+    .nav_links.active li{
+        font-size: 0.9rem;
+    }
+
+    /* .nav_links li:hover .dropdown-menu{
         visibility: hidden;
+    } */
+    /* .nav_links li:active .dropdown-menu{
+        visibility: visible;
+    } */
+
+    .dropdown-menu{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 500px;
+        background-color: #055c30ad;
+        top: 0;
+        right: 0;
+    }
+
+    #container #toggleElement{
+        display: none;
+    }
+    #container .menu-label{
+        display: flex;
+        margin-left: 5px;
+    }
+
+    #menu-toggle:checked  .dropdown-menu{
+        /* display: flex; */
+        background-color: #064c29;
+        max-height: auto;
     }
 
     .c1 h1,div{
@@ -921,6 +981,9 @@ header {
         padding: 25px 10px;
     }
 
+    .fee-deadline h2{
+        font-size: 1.5rem;
+    }
     .box{
         width: 50%;
     }
@@ -944,4 +1007,21 @@ header {
     }
 } 
 
-/* @media (max-width: 5) */
+@media (max-width: 350px) {
+    body{
+        font-size: 9px;
+    }
+
+    .page_uno{
+        height: 130vh;
+    }
+    
+    .reg-fees{
+        padding: 0;
+        font-size: 2em;
+    }
+
+    .location-info{
+        margin-left: 0;
+    }
+}
