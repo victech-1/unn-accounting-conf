@@ -42,7 +42,7 @@ a:hover{
 .op-background{
     background-color: hsl(150, 85%, 23%);
     z-index: 2;
-    height: 268px;
+    height: 52vh;
     width: 100vw;
     position: absolute;
     top: 0;
@@ -57,7 +57,7 @@ a:hover{
     display: flex;
     background-repeat: no-repeat;
     width: 100vw;
-    height: 336px;
+    height: 65vh;
     padding-top: 170px;
     padding-bottom: 90px;
     /* position: absolute; */
