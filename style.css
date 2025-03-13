@@ -50,6 +50,9 @@ body section{
 a:hover{
     cursor: pointer;
 }
+a{
+    color: white;
+}
 section{
     /* height: 100vh; */
     overflow-x: hidden;
@@ -604,12 +607,12 @@ header {
     height: 50px;
     width: 240px;
     color: white;
-    padding: 15px 40px;
+    padding: 1px 10px;
     margin: 2px;
     font-size: 0.875rem;
     font-family: "Oswald", sans-serif;
     letter-spacing: 2px;
-    font-weight: 300;
+    font-weight: 500;
     border: none;
 }
 

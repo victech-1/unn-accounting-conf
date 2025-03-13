@@ -66,15 +66,13 @@ a:hover{
 }
 
 .content {
-    color: var(--color-primary);
     width: 100%;
 }
 .content h2 {
-    font-size: 42px;
+    font-size: 2.625rem;
     font-family: "Poppins", sans-serif;
     color: hsl(0, 0%, 100%);
     text-align: left;
-    font-size: 42px;
     font-weight: 900;
     line-height: 50px;
     vertical-align: baseline;
@@ -174,7 +172,7 @@ a:hover{
 }
 
 .page-content{
-    padding-left: 70px;
+    padding: 70px;
     padding-bottom: 30px;   
 }
 .text {
@@ -190,10 +188,8 @@ align-items: center;
 display: flex;
 color: #096C3A;
 font-family : "Oswald", sans-serif;
-font-size: 46px;
-line-height: 40px;
-vertical-align: baseline;
-letter-spacing: normal;
+font-size: 2.875rem;
+line-height: 30px;
 padding: 0px;
 font-weight: 900;
 text-indent: 0px;
@@ -207,10 +203,39 @@ text-indent: 0px;
 .text1 p{
     font-family: "poppins", sans-serif;
     color: #323333;
-    line-height: 40px;
+    line-height: 30px;
+    padding-bottom: 10px;
 }
 
 .text1 p a{
     color: #096C3A;
 }
 
+.register-btn{
+    display: flex;
+    border: 1px solid #096C3A;
+    justify-self: center;
+}
+
+@media (max-width: 774px) {
+    .content h2 {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .text{
+        padding: 1px;
+    }
+    .txt-process3{
+        font-size: 1.5rem;
+    }
+ 
+    .page-content{
+        padding: 20px;
+        padding-bottom: 30px;   
+    }
+    
+    .text1 p{
+        text-align: left;
+        font-size: 1rem;
+    }
+}
