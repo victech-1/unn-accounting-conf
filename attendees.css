@@ -1,0 +1,22 @@
+.page-info{
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    color: #323333;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.page-info li{
+    list-style: disc;
+}
+
+.attenders{
+    padding-left: 30px;
+}
+
+.staff li{
+    list-style: circle;
+    margin-left: 40px;
+}

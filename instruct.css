@@ -76,7 +76,7 @@ a:hover{
     font-weight: 900;
     line-height: 50px;
     vertical-align: baseline;
-    width: 293px;
+    width: auto;
     height: 50px;
     margin-bottom: 10px;
     font-style: normal;
@@ -101,7 +101,7 @@ a:hover{
 }
 
 .word{
-    width: 188px;
+    width: auto;
     height: 26px;
     margin-left: 3px;
     margin-top: 5px;
@@ -174,6 +174,7 @@ a:hover{
 .page-content{
     padding: 70px;
     padding-bottom: 30px;   
+    min-height: 70vh;
 }
 .text {
     width: 100vw;
@@ -182,7 +183,7 @@ a:hover{
     padding: 20px 0px 20px 0px;
         
 }
-.text .txt-process3 {
+.txt-process3 {
     
 align-items: center;
 display: flex;
