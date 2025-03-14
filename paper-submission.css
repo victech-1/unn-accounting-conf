@@ -1,0 +1,52 @@
+.way-submit{
+    border: 1px solid #000;
+    display: flex;
+    align-self: center;
+    margin-top: 40px;
+}
+.page-content{
+    padding: 0px;
+}
+.way-submit #box{
+    width: 33.3%;
+    height: 400px;
+    border: 1px dotted gainsboro;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+
+#box i{
+    color: #554bb9;
+}
+
+#box p{
+    font-family: "Poppins", sans-serif;
+    color: #323333;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 10px;
+    font-weight: 400;
+}
+
+#box div li{
+    font-family: "Poppins", sans-serif;
+    color: #323333;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 10px;
+    font-weight: 400;
+    list-style: disc;
+    padding: 10px;
+}
+
+.subm-info{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    background-image: url(./images/patt2.png);
+    height: 90vh;
+    width: 100vw;
+}
