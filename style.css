@@ -442,7 +442,7 @@ header {
 
 .why-ACCIC h2{
     color: white;
-    font-size: 2.81825rem;
+    font-size: 2.825rem;
     font-family: "Poppins", sans-serif;
     /* margin-left: 100px; */
     
@@ -1011,6 +1011,9 @@ footer {
         font-size: 9px;
     }
 
+    .why-ACCIC h2{
+        font-size: 1.8rem;
+    }
     .c1 h1 {
         font-size: 1.8rem;
     }
@@ -1037,4 +1040,6 @@ footer {
     .location-info{
         margin-left: 0;
     }
+
+
 }
