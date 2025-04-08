@@ -114,7 +114,6 @@ header {
 
 /* MENU BUTTON (Mobile) */
 .menu-btn {
-    display: none;
     cursor: pointer;
     justify-self: flex-end;
     font-size: 1.5rem;
@@ -124,7 +123,6 @@ header {
 }
 
 .menu-bar, .close {
-    display: none;
     font-size: 1.5rem;
     background: none;
     border: none;
@@ -868,6 +866,8 @@ footer {
     .nav_links li {
         font-size: 10px;
     }
+
+
 }
 
 
@@ -916,7 +916,7 @@ footer {
     .nav_links.active {
         display: flex;
         animation: menuSlide 0.2s ease-in;
-        /* height: 70%; */
+        height: 70%;
     }
     @keyframes menuSlide{
         0%{
@@ -974,6 +974,7 @@ footer {
     .cpnf-img{
         width: 100%;
         padding: 0;
+        margin-bottom: 20px;
     }
 
     .who-attends,.why-attend{

@@ -8,28 +8,51 @@ window.addEventListener("scroll", function () {
     }
 });
 
-const closeBtn = document.querySelector(".close");
-const menuBtn = document.querySelector(".menu-bar");
+// document.addEventListener("DOMContentLoaded", function () {
+//     const closeBtn = document.querySelector(".close");
+//     const menuBtn = document.querySelector(".menu-bar");
+    
+//     // Initial state
+//     closeBtn.style.display = "none";
+    
+//     function toggleButton() {
+//         const menuDisplay = window.getComputedStyle(menuBtn).display;
+//         const closeDisplay = window.getComputedStyle(closeBtn).display;
+    
+//         if (menuDisplay !== "none") {
+//             menuBtn.style.display = "none";
+//             closeBtn.style.display = "block";
+//         } else {
+//             menuBtn.style.display = "block";
+//             closeBtn.style.display = "none";
+//         }
+//     }
 
-
+// });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const navLinks = document.querySelector(".nav_links");
+    const closeBtn = document.querySelector(".close");
+    const menuBtn = document.querySelector(".menu-bar");
 
-    menuBtn.addEventListener("click", function () {
-        navLinks.classList.add("active");
-        menuBtn.style.display = "none";
-        closeBtn.style.display = "block";
-    });
+    // Set initial state
+    closeBtn.style.display = "none";
 
-    closeBtn.addEventListener("click", function () {
-        navLinks.classList.remove("active");
-        menuBtn.style.display = "block";
-        closeBtn.style.display = "none";
-    });
+    function toggleButton() {
+        const menuDisplay = window.getComputedStyle(menuBtn).display;
+
+        if (menuDisplay !== "none") {
+            menuBtn.style.display = "none";
+            closeBtn.style.display = "block";
+        } else {
+            menuBtn.style.display = "block";
+            closeBtn.style.display = "none";
+        }
+    }
+
+    // Attach the same function to both buttons
+    menuBtn.addEventListener("click", toggleButton);
+    closeBtn.addEventListener("click", toggleButton);
 });
-
-
 
 
 
